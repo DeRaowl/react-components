@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import { data } from "./components/Accordian/data";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Accordian from "./components/Accordian/Accordian";
+import Timer from "./components/Stop/Timer";
 
 function App() {
+  const [accordianData, setAccordianData] = React.useState(data);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/accordian"
+            element={<Accordian data={accordianData} />}
+          />
+          <Route path="/timer" element={<Timer start={0} end={30} />} />
+        </Routes>
+      </BrowserRouter>
+    </main>
   );
 }
 

@@ -1,0 +1,18 @@
+button {
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.timer {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 4rem;
+}
