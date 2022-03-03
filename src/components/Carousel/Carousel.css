@@ -1,0 +1,40 @@
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+img {
+  width: 600px;
+  max-width: 100%;
+}
+
+button {
+  color: #222;
+  font-size: 1.25rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.prev-btn {
+  position: absolute;
+  left: 10%;
+}
+
+.next-btn {
+  position: absolute;
+  right: 10%;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
