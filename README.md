@@ -6,4 +6,4 @@
 1. [Timer](https://reactjs-component.herokuapp.com/timer)
 2. [Accordian](https://reactjs-component.herokuapp.com/accordian)
 3. [Carousel](https://reactjs-component.herokuapp.com/Carousel)
-4. [Carousel](https://reactjs-component.herokuapp.com/todo)
+4. [Todo](https://reactjs-component.herokuapp.com/todo)
