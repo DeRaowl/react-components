@@ -1,5 +1,5 @@
 import React from "react";
-import { useGlobalContext } from "./context/TodoContext";
+const useGlobalContext = React.lazy(() => import("./context/TodoContext"));
 
 function List({ id, title }) {
   const { handleDelete, handleEdit } = useGlobalContext();

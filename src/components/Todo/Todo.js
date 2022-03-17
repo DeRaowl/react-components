@@ -1,7 +1,8 @@
 import React from "react";
-import { useGlobalContext } from "./context/TodoContext";
-import List from "./List";
 import "./Todo.css";
+
+import { useGlobalContext } from "./context/TodoContext";
+const List = React.lazy(() => import("./List"));
 
 function Todo() {
   const {
