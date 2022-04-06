@@ -1,0 +1,23 @@
+.progress {
+  border: 1px solid grey;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 20px;
+  position: relative;
+  margin: 10px;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(180, 101, 255);
+  width: 0%;
+  height: 100%;
+  border-radius: 20px;
+  opacity: 0;
+  transition: width 1s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
