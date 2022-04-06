@@ -8,6 +8,7 @@ function ProgressBar({ className, size, progress, color }) {
     setStyle({
       width: `${progress}%`,
       opacity: 1,
+      backgroundColor: `${color}`,
     });
   }, 1000);
 
