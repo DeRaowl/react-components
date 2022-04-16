@@ -1,0 +1,12 @@
+.lazy-img {
+  margin: 1rem;
+  display: block;
+  text-align: center;
+  width: 200px;
+  max-width: 100%;
+  height: 150px;
+}
+
+.span-style {
+  background-color: grey;
+}
